@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardening Know How</title>
+    <link rel="stylesheet" href="./style.css">
+<head>
+</head>
+<body>
+    <style>
+    /* Footer Styling */
+        .footer {
+            background-color: #1e2b37; /* Dark blue-green */
+            color: #ecf0f1; /* Light gray */
+            text-align: center;
+            padding: 40px 0 20px;
+            font-family: 'Arial', sans-serif;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 100%px; /* Wider container */
+           
+            padding: 0 px;
+            width: 100%;
+        }
+
+        /* Title */
+        .footer-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .footer-title img{
+            height: 95px;
+        }
+
+        /* Navigation */
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .footer-nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-nav a:hover {
+            color: #27ae60;
+        }
+
+        /* Newsletter Section */
+        .footer-newsletter {
+            margin: 25px auto;
+            max-width: 800px; /* Wider newsletter section */
+        }
+
+        .footer-newsletter h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .footer-newsletter p {
+            font-size: 14px;
+            color: #bdc3c7;
+            margin-bottom: 15px;
+            margin-left: 185px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .newsletter-form input {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #27ae60;
+            border-radius: 5px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-size: 14px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            background-color: #27ae60;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #2ecc71; /* Lighter green on hover */
+        }
+
+        /* Map Embed */
+        .footer-map {
+            margin: 25px auto;
+            max-width: 1000px; /* Wider map section */
+        }
+
+        .footer-map h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .footer-map iframe {
+            border-radius: 10px;
+            width: 100%;
+            height: 200px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Social Media */
+        .footer-social {
+            margin: 25px auto;
+        }
+
+        .footer-social h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #ecf0f1;
+            font-size: 22px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #27ae60;
+        }
+
+        /* Copyright */
+        .footer-copy {
+            font-size: 12px;
+            opacity: 0.8;
+            color: #bdc3c7;
+            margin-top: 15px;
+        }
+
+        .footer-copy i {
+            color: #e74c3c;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .footer-title {
+                font-size: 24px;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .newsletter-form input {
+                width: 90%;
+            }
+
+            .newsletter-form button {
+                width: 90%;
+            }
+
+            .footer-map iframe {
+                height: 180px;
+            }
+        }
+        </style>
+    <!--navbar-->
+    <nav class="nav-container">
+        <div class="top-bar">
+            <a href="#" class="logo">
+                <img src="./images/Adobe Express - file.png">
+            </a>
+            <div class="spacer"></div>
+        </div>
+        <div class="main-nav">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li >
+                    <a href="./How to.html">How To</a>
+                </li>
+                <li >
+                    <a href="./Product.html">Shop Now</a>
+                </li>
+                <li>
+                    <a href="./about us.html">About Us</a>
+                </li>
+                <li >
+                    <a href="./Contactus.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--slides-->
+    <div class="banner-container">
+        <div class="banner-slide active">
+            <img src="./images/photos for Garden World/THe.jpg" alt="Plant seedling in soil" class="banner-image">
+            <div class="banner-content">
+                <h1 class="banner-title">
+                    <span class="the">THE</span>
+                    <span class="bright-beginnings">Bright Beginnings</span>
+                    <span class="sale">SALE</span>
+                </h1>
+                <p class="banner-subtitle">Deep discounts on growlights and seed starting supplies</p>
+                <button class="shop-button">Shop Now</button>
+            </div>
+        </div>
+        <div class="banner-slide">
+            <img src="./images/photos for Garden World/Garden-products.jpeg" alt="Garden supplies" class="banner-image">
+            <div class="banner-content">
+                <h1 class="banner-title">
+                    <span class="the">GROW</span>
+                    <span class="bright-beginnings">Your Garden</span>
+                    <span class="sale">TODAY</span>
+                </h1>
+                <p class="banner-subtitle">Premium supplies at unbeatable prices</p>
+                <button class="shop-button">Shop Now</button>
+            </div>
+        </div>
+        <div class="banner-slide">
+            <img src="./images/photos for Garden World/seedling in pot2.jpeg" alt="Seedlings in pots" class="banner-image">
+            <div class="banner-content">
+                <h1 class="banner-title">
+                    <span class="the">START</span>
+                    <span class="bright-beginnings">Your Season</span>
+                    <span class="sale">RIGHT</span>
+                </h1>
+                <p class="banner-subtitle">Everything you need for successful starts</p>
+                <button class="shop-button">Shop Now</button>
+            </div>
+        </div>
+        <div class="dot-container">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <script>
+      let slideIndex = 0;
+        const slides = document.getElementsByClassName("banner-slide");
+        const dots = document.getElementsByClassName("dot");
+        let slideInterval;
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+                dots[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].classList.add("active");
+            dots[slideIndex - 1].classList.add("active");
+        }
+
+        // Initialize the slideshow
+        slideInterval = setInterval(showSlides, 5000);
+
+        // Add click handlers for the dots
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].addEventListener("click", function() {
+                clearInterval(slideInterval);
+                slideIndex = i;
+                showSlides();
+                slideInterval = setInterval(showSlides, 5000);
+            });
+        }
+    </script>
+    <!--Articles-->
+    <div class="containerhaha">
+        <h1>Articles</h1><hr>
+        <div class="grid">
+            <div class="card">
+                <img src="./images/photos for Garden World/Essential Gardening Tools for Every Gardener.jpeg" alt="Crocus in snow">
+                <p><h3> Essential Gardening Tools for Every Gardener</h3>Discover must-have tools like trowels, pruning shears, and watering cans. Learn how to maintain them for longevity and choose the right ones for your garden size.</p>
+            </div>
+            
+            <div class="card">
+                <img src="./images/photos for Garden World/Best Soil and Fertilizers for a Thriving Garden.jpg" alt="Pink Lenten rose">
+                <p><h3>Best Soil and Fertilizers for a Thriving Garden</h3>Understand different soil types and their benefits. Learn about organic and synthetic fertilizers, and how to naturally improve soil health for better plant growth.</p>
+            </div>
+            
+            <div class="card">
+                <img src="./images/photos for Garden World/How to Grow Vegetables at Home A Beginners Guide.jpeg" alt="Snowy garden">
+                <p><h3>How to Grow Vegetables at Home: A Beginners Guide</h3> Start with easy-to-grow veggies like tomatoes and lettuce. Get tips on spacing, sunlight, and watering, plus container gardening tricks for small spaces.</p>
+            </div>
+            <div class="card">
+                <img src="./images/photos for Garden World/Organic Pest Control Methods for a Healthy Garden.jpg" alt="Crocus in snow">
+                <p><h3>Organic Pest Control Methods for a Healthy Garden</h3> Keep pests away naturally with companion planting, neem oil, and beneficial insects. Learn how to make homemade repellents for a chemical-free garden.</p>
+            </div>
+            <div class="card">
+                <img src="./images/photos for Garden World/Top 10 Low-Maintenance Plants for a Beautiful Garden.jpg" alt="Crocus in snow">
+                <p><h3> Top 10 Low-Maintenance Plants for a Beautiful Garden </h3>Explore flowers and shrubs that thrive with minimal care. Find the best plants for different climates and design a stunning, easy-to-manage garden.</p>
+            </div>
+            <div class="card">
+                <img src="./images/photos for Garden World/Seasonal Gardening TipsWhat to Plant and When.jpeg" alt="Crocus in snow">
+                <p><h3>Seasonal Gardening Tips: What to Plant and When</h3>Learn what to grow in each season and how to prepare your garden for weather changes. Use crop rotation and companion planting to maximize harvests.</p>
+            </div>
+        </div>
+    </div>
+<!--devider-->
+<div class="divider-container">
+    <div class="line"></div>
+    <div class="leaf-container">
+      <span class="leaf">🍂</span>
+    </div>
+    <div class="line"></div>
+  </div>
+<!--benefits-->
+    <div class="containerhaha">
+        <h1>Benefits of Gardening</h1><hr>
+        <div class="grid">
+            <div class="card">
+                <img src="./images/photos for Garden World/Gardening for Mental Well-Being.jpeg" alt="Crocus in snow">
+                <p><h3>Gardening for Mental Well-Being</h3> Spending time in a garden reduces stress, anxiety, and depression by promoting relaxation.The fresh air and connection to nature enhance mood and improve focus. Gardening also provides a sense of accomplishment, boosting self-esteem.</p>
+            </div>
+            
+            <div class="card">
+                <img src="./images/photos for Garden World/Gardening for Physical Health.jpg" alt="Pink Lenten rose">
+                <p><h3>Gardening for Physical Health </h3>Digging, planting, and weeding engage muscles and promote physical activity, improving strength and flexibility. Exposure to sunlight boosts vitamin D levels, supporting bone health. Regular gardening can lower the risk of heart disease and obesity.</p>
+            </div>
+            
+            <div class="card">
+                <img src="./images/photos for Garden World/something.jpg" alt="Snowy garden">
+                <p><h3>Gardening for Fresh, Organic Food</h3> Growing your own fruits and vegetables ensures chemical-free, nutritious produce. Homegrown food is fresher, tastier, and packed with essential vitamins. It also reduces grocery bills while encouraging a healthier diet.</p>
+            </div>
+            <div class="card">
+                <img src="./images/photos for Garden World/Gardening for Environmental Benefits.jpeg" alt="Crocus in snow">
+                <p><h3>Gardening for Environmental Benefits</h3> Plants absorb carbon dioxide and release oxygen, improving air quality. A well-maintained garden supports biodiversity by attracting bees, butterflies, and birds. Growing native plants helps conserve water and prevent soil erosion.</p>
+            </div>
+            <div class="card">
+                <img src="./images/photos for Garden World/Gardening for Social Connections.jpg" alt="Crocus in snow">
+                <p><h3>Gardening for Social Connections </h3>Community gardens and shared green spaces bring people together, fostering friendships. Gardening clubs and workshops encourage learning and collaboration. Working on a garden as a family strengthens bonds and creates lasting memories.</p>
+            </div>
+            <div class="card">
+                <img src="./images/photos for Garden World/Gardening for Creativity and Learning.jpeg" alt="Crocus in snow">
+                <p><h3>Gardening for Creativity and Learning</h3>Designing garden layouts and choosing plants spark creativity and problem-solving skills. It teaches patience, responsibility, and an understanding of nature’s cycles. Gardening also inspires curiosity about botany, soil health, and sustainability.</p>
+            </div>
+        </div>
+    </div>
+    <!--devider-->
+<div class="divider-container">
+    <div class="line"></div>
+    <div class="leaf-container">
+      <span class="leaf">🍂</span>
+    </div>
+    <div class="line"></div>
+  </div><!--indoor gardening atrraction card 1--> 
+     <div class="gardenhead">
+      <h1>Types Of Indoor Garden</h1>
+    </div>
+    
+   <!--indoor gardening attraction card-->
+      <div class="banner">
+        <img src="./images/photos for Garden World/Indoor Kitchen Garden.jpg" alt="Windowsill Garden">
+            <h1>Indoor Kitchen Garden</h1>
+        </div>
+        <div class="main-container">
+              <!-- First Promo (Image Left) -->
+              <div class="promo-section">
+                <div class="image-container">
+                  <img src="./images/photos for Garden World/Growing Fresh Produce at Home.jpeg" class="promo-image">
+                </div>
+                <div class="content">
+                  <h3>Growing Fresh Produce at Home</h3>
+                  <p>An indoor vegetable garden allows you to grow fresh, organic vegetables year-round, regardless of outdoor weather conditions.</p>
+                </div>
+              </div>
+              <!-- Second Promo (Image Right) -->
+              <div class="promo-section reversed">
+                <div class="image-container">
+                  <img src="./images/photos for Garden World/Space-Efficient & Controlled Environment.jpeg" class="promo-image">
+                </div>
+                <div class="content">
+                  <h3>Space-Efficient & Controlled Environment</h3>
+                  <p>It can be set up in small spaces like kitchens, balconies, or windowsills, using containers, hydroponics, or vertical gardening techniques while controlling light, humidity, and temperature.</p>
+                </div>
+              </div>
+              <!-- Third Promo (Image Left) -->
+              <div class="promo-section">
+                <div class="image-container">
+                  <img src="./images/photos for Garden World/Health & Sustainability Benefits.jpeg" class="promo-image">
+                </div>
+                <div class="content">
+                  <h3>Health & Sustainability Benefits</h3>
+                  <p>Growing your own vegetables ensures chemical-free produce, reduces grocery costs, and promotes a sustainable lifestyle with less waste and carbon footprint.</p>
+                </div>
+              </div>
+            </div>
+    
+ 
+              <div class="banner" >
+                <img src="./images/photos for Garden World/windowsill garden.jpg" alt="Windowsill Garden">
+                <h1>Windowsill Garden</h1>
+            </div>
+            <div class="main-container">
+                
+                <!-- First Promo (Image Left) -->
+                <div class="promo-section">
+                  <div class="image-container">
+                    <img src="./images/photos for Garden World/Small-Scale Indoor Gardening.jpeg"  class="promo-image">
+                  </div>
+                  <div class="content">
+                    <h3>Small-Scale Indoor Gardening</h3>
+                    <p>A windowsill garden is a compact, indoor garden placed on a windowsill, utilizing natural sunlight for plant growth.</p>
+                  </div>
+                </div>
+                <!-- Second Promo (Image Right) -->
+                <div class="promo-section reversed">
+                  <div class="image-container">
+                    <img src="./images/photos for Garden World/Ideal for Herbs & Small Plants.jpg" class="promo-image">
+                  </div>
+                  <div class="content">
+                    <h3>Ideal for Herbs & Small Plants </h3>
+                    <p>Common plants include herbs (basil, mint, parsley), microgreens, succulents, and small flowers, making it perfect for limited spaces.</p>
+                  </div>
+                </div>
+                <!-- Third Promo (Image Left) -->
+                <div class="promo-section">
+                  <div class="image-container">
+                    <img src="./images/photos for Garden World/Easy Maintenance & Year-Round Growth.jpeg" class="promo-image">
+                  </div>
+                  <div class="content">
+                    <h3>Easy Maintenance & Year-Round Growth </h3>
+                    <p>Requires minimal care, with regular watering and occasional fertilizing, allowing fresh greenery indoors throughout the year.</p>
+                  </div>
+                </div>
+              </div>
+ 
+       <div class="banner" >
+        <img src="./images/photos for Garden World/container garden.jpeg" alt="Windowsill Garden">
+           <h1>Container Garden</h1>
+      </div>
+    
+      <div class="main-container">
+                
+        <!-- First Promo (Image Left) -->
+        <div class="promo-section">
+            <div class="image-container">
+              <img src="./images/photos for Garden World/Overview.jpeg"  class="promo-image">
+            </div>
+            <div class="content">
+              <h3>Overview</h3>
+              <p> Container gardens involve growing plants in pots, planters, or other containers instead of directly in the ground, making them ideal for small spaces like balconies, patios, and urban settings.</p>
+            </div>
+          </div>
+          <!-- Second Promo (Image Right) -->
+          <div class="promo-section reversed">
+            <div class="image-container">
+              <img src="./images/photos for Garden World/Flexibility.jpeg" class="promo-image">
+            </div>
+            <div class="content">
+              <h3>Flexibility </h3>
+              <p>They allow for easy mobility, better control over soil quality, and the ability to grow a variety of plants, including flowers, herbs, vegetables, and even small trees.</p>
+            </div>
+          </div>
+          <!-- Third Promo (Image Left) -->
+          <div class="promo-section">
+            <div class="image-container">
+              <img src="./images/photos for Garden World/low maintainence.jpeg" class="promo-image">
+            </div>
+            <div class="content">
+              <h3>Easy Maintenance </h3>
+              <p>Container gardens require regular watering and fertilizing, as soil in containers dries out faster, but they also reduce issues like weeds and soil-borne diseases.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Footer Title -->
+            <div class="footer-title">
+                <img src="./images/Adobe Express - file.png" alt="logo">
+            </div>
+
+            <!-- Footer Navigation -->
+            <nav class="footer-nav">
+                <a href="./index.html">Home</a>
+                <a href="./How to.html">How To</a>
+                <a href="./Product.html">Shop Now</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                
+            </nav>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get the latest gardening tips, exclusive offers, and seasonal guides straight to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Map Embed -->
+            <div class="footer-map">
+                <h3>Visit Us</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6a32f7f1f8!2sRoyal%20Botanic%20Gardens%20Victoria!5e0!3m2!1sen!2sus!4v1622549404257!5m2!1sen!2sus"
+                    width="100%"
+                    height="200"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    aria-label="Location Map"
+                ></iframe>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Follow us on Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Follow us on YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+            <!-- Copyright -->
+            <div class="footer-copy">
+                © 2023 Garden World. All rights reserved. | Designed with <i class="fas fa-heart"></i> by Nature Lovers
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

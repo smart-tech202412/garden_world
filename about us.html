@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Auckland's Trusted Gardeners & Landscapers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .nav-container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        
+        .logo {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-left: 40%;
+        }
+        
+        .logo img {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+            margin-top: -35px;
+            margin-bottom: -20px;
+        }
+        .spacer {
+            flex: 1;
+        }
+        
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+            background-color: white;
+        }
+        
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            position: relative;
+        }
+        
+        .main-nav a:hover {
+            color: #666;
+        }
+
+        /* About Us Section */
+        .about-us {
+            background: linear-gradient(rgb(66, 91, 66),rgb(105, 110, 101));
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about-header h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .about-text {
+            max-width: 450px;
+            text-align: left;
+        }
+
+        .about-text h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Image Styling */
+        .about-image {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes borderRadiusChange {
+            0% {
+                border-radius: 50%;
+                transform: scale(1);
+            }
+            50% {
+                border-radius: 40%;
+                transform: scale(1.1);
+            }
+            100% {
+                border-radius: 50%;
+                transform: scale(1);
+            }
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: borderRadiusChange 8s ease-in-out infinite alternate;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .about-image img:hover {
+            animation-play-state: paused;
+            transform: scale(1.1);
+        }
+
+        /* Container Styling */
+        
+        .container, .mission-container {
+            max-width: 100%;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            height:500px ;
+        }
+
+        .header h1, .header h3 {
+            color: #2e7d32;
+        }
+        .content{
+            margin-bottom: 60px;
+        }
+
+
+       /* Section Styling */
+.experts-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    
+}
+
+/* Title Styling */
+.experts-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Experts Container */
+.experts-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Responsive stacking */
+}
+
+/* Expert Card */
+.expert {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 200px;
+    text-align: center;
+    padding: 15px;
+}
+
+.expert:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Expert Image */
+.expert img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #4CAF50;
+}
+
+/* Expert Info */
+.expert-info {
+    padding: 10px 0;
+}
+
+.expert-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.expert-title {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+      /*footer*/
+        /* Footer Styling */
+        .footer {
+            background-color: #1e2b37; /* Dark blue-green */
+            color: #ecf0f1; /* Light gray */
+            text-align: center;
+            padding: 40px 0 20px;
+            font-family: 'Arial', sans-serif;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 100%px; /* Wider container */
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        /* Title */
+        .footer-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .footer-title img{
+            height: 95px;
+        }
+
+        /* Navigation */
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .footer-nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-nav a:hover {
+            color: #27ae60;
+        }
+
+        /* Newsletter Section */
+        .footer-newsletter {
+            margin: 25px auto;
+            max-width: 800px; /* Wider newsletter section */
+        }
+
+        .footer-newsletter h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .footer-newsletter p {
+            font-size: 14px;
+            color: #bdc3c7;
+            margin-bottom: 15px;
+            margin-left: 185px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .newsletter-form input {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #27ae60;
+            border-radius: 5px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-size: 14px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            background-color: #27ae60;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #2ecc71; /* Lighter green on hover */
+        }
+
+        /* Map Embed */
+        .footer-map {
+            margin: 25px auto;
+            max-width: 1000px; /* Wider map section */
+        }
+
+        .footer-map h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .footer-map iframe {
+            border-radius: 10px;
+            width: 100%;
+            height: 200px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Social Media */
+        .footer-social {
+            margin: 25px auto;
+        }
+
+        .footer-social h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #ecf0f1;
+            font-size: 22px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #27ae60;
+        }
+
+        /* Copyright */
+        .footer-copy {
+            font-size: 12px;
+            opacity: 0.8;
+            color: #bdc3c7;
+            margin-top: 15px;
+        }
+
+        .footer-copy i {
+            color: #e74c3c;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .footer-title {
+                font-size: 24px;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .newsletter-form input {
+                width: 90%;
+            }
+
+            .newsletter-form button {
+                width: 90%;
+            }
+
+            .footer-map iframe {
+                height: 180px;
+            }
+        }
+    </style>
+        <!--navbar-->
+        <nav class="nav-container">
+            <div class="top-bar">
+                <a href="#" class="logo">
+                    <img src="./images/Adobe Express - file.png">
+                </a>
+                <div class="spacer"></div>
+            </div>
+            <div class="main-nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li >
+                        <a href="./How to.html">How To</a>
+                    </li>
+                    <li >
+                        <a href="./Product.html">Shop Now</a>
+                    </li>
+                    <li>
+                        <a href="./about us.html">About Us</a>
+                    </li>
+                    <li >
+                        <a href="./Contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <!--about us page -->
+    <section class="about-us">
+        <div class="about-header">
+            <h2>About Us</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Everything You Need for a Thriving Indoor Garden</h3>
+                <p>We offer a carefully selected range of gardening tools, high-quality seeds, organic fertilizers, nutrient-rich soil, and lush plants to help you create the perfect indoor garden. With our expert guidance and premium products, growing and caring for plants has never been easier.</p>
+            </div>
+            <div class="about-image">
+                <img src="./images/pexels-pixabay-144243.jpg" alt="Ladybug on green moss">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="header">
+            <h3>Our History</h3>
+            <h1>Our Story</h1>
+        </div>
+        <div class="content">
+            <p>Welcome to Garden World, where the beauty of nature meets the comfort of your home.<br> Our journey began with a simple love for greenery and the belief that everyone deserves <br>a thriving indoor garden, no matter the space they have. </p>
+            <p>At Garden World, we understand that plants bring life, tranquility, and a touch of nature to any setting. <br>Whether you're a seasoned gardener or just starting, we are here to provide you with the best tools, seeds, fertilizers, and plants<br> to help you cultivate your dream indoor oasis.</p>
+        </div>
+        
+        <h1>Our Mission</h1>
+        <p>Our mission is to make gardening easy, enjoyable, and accessible.<br> From handpicked essentials to expert tips, we are committed to helping you grow a lush, vibrant indoor garden.<br>Join us in creating greener homes, one plant at a time!</p>
+    </div>
+
+    <div class="experts-section">
+        <h2 class="experts-title">Meet Our Team</h2>
+        <div class="experts-container">
+            <div class="expert">
+                <img src="./images/120488384_714018255869680_8911380510009360087_n.jpg" alt="Liz Baessler">
+                <div class="expert-info">
+                    <div class="expert-name">Raheen</div>
+                    <div class="expert-title">Senior Editor</div>
+                </div>
+            </div>
+            <div class="expert">
+                <img src="./images/121779950_726277021310470_9090286221438160006_n.jpg" alt="Janey Goulding">
+                <div class="expert-info">
+                    <div class="expert-name">Abdullah</div>
+                    <div class="expert-title">Content Editor</div>
+                </div>
+            </div>
+            <div class="expert">
+                <img src="./images/aa.jpg" alt="Armen Adamjan">
+                <div class="expert-info">
+                    <div class="expert-name">Mussab</div>
+                    <div class="expert-title">Content Contributor</div>
+                </div>
+            </div>
+            <div class="expert">
+                <img src="./images/babeee.jpg" alt="Susan Albert">
+                <div class="expert-info">
+                    <div class="expert-name">Saify</div>
+                    <div class="expert-title">Writer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--footer-->
+     <style>
+        /* Footer Styling */
+        .footer {
+            background-color: #1e2b37; /* Dark blue-green */
+            color: #ecf0f1; /* Light gray */
+            text-align: center;
+            padding: 40px 0 20px;
+            font-family: 'Arial', sans-serif;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 100%px; /* Wider container */
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Title */
+        .footer-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .footer-title img{
+            height: 95px;
+        }
+
+        /* Navigation */
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .footer-nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-nav a:hover {
+            color: #27ae60;
+        }
+
+        /* Newsletter Section */
+        .footer-newsletter {
+            margin: 25px auto;
+            max-width: 800px; /* Wider newsletter section */
+        }
+
+        .footer-newsletter h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .footer-newsletter p {
+            font-size: 14px;
+            color: #bdc3c7;
+            margin-bottom: 15px;
+            margin-left: 27%;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .newsletter-form input {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #27ae60;
+            border-radius: 5px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-size: 14px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            background-color: #27ae60;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #2ecc71; /* Lighter green on hover */
+        }
+
+        /* Map Embed */
+        .footer-map {
+            margin: 25px auto;
+            max-width: 1000px; /* Wider map section */
+        }
+
+        .footer-map h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .footer-map iframe {
+            border-radius: 10px;
+            width: 100%;
+            height: 200px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Social Media */
+        .footer-social {
+            margin: 25px auto;
+        }
+
+        .footer-social h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #ecf0f1;
+            font-size: 22px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #27ae60;
+        }
+
+        /* Copyright */
+        .footer-copy {
+            font-size: 12px;
+            opacity: 0.8;
+            color: #bdc3c7;
+            margin-top: 15px;
+        }
+
+        .footer-copy i {
+            color: #e74c3c;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .footer-title {
+                font-size: 24px;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .newsletter-form input {
+                width: 90%;
+            }
+
+            .newsletter-form button {
+                width: 90%;
+            }
+
+            .footer-map iframe {
+                height: 180px;
+            }
+        }
+    </style>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Footer Title -->
+            <div class="footer-title">
+                <img src="./images/Adobe Express - file.png" alt="logo">
+            </div>
+
+            <!-- Footer Navigation -->
+            <nav class="footer-nav">
+                <a href="./index.html">Home</a>
+                <a href="./How to.html">How To</a>
+                <a href="./Product.html">Shop Now</a>
+                <a href="./about us.html">About Us</a>
+                <a href="./Contactus.html">Contact Us</a>
+                
+            </nav>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get the latest gardening tips, exclusive offers, and seasonal guides straight to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Map Embed -->
+            <div class="footer-map">
+                <h3>Visit Us</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6a32f7f1f8!2sRoyal%20Botanic%20Gardens%20Victoria!5e0!3m2!1sen!2sus!4v1622549404257!5m2!1sen!2sus"
+                    width="100%"
+                    height="200"
+                    style="border:0;"
+                    allowfullscreen=""8354345093747
+                    loading="lazy"
+                    aria-label="Location Map"
+                ></iframe>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Follow us on Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Follow us on YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+            <!-- Copyright -->
+            <div class="footer-copy">
+                © 2023 Garden World. All rights reserved. | Designed with <i class="fas fa-heart"></i> by Nature Lovers
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
